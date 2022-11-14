@@ -22,6 +22,8 @@ export default function Home() {
 
 
   async function getSales() {
+    // You can find the sys_name by going on the collection page and looking at the name in the url
+    //  ex) https://www.skyharbor.io/collection/ethugees <- ethugees being the sys_name
     const collectionSysName = "ethugees";
     const saleStatus = "active" //only looking for currently ongoing sales
     const orderColumn = "list_time"
