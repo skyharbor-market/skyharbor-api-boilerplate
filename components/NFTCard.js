@@ -1,3 +1,4 @@
+import { AspectRatio, Box, Button, Image, Stack, Text } from '@chakra-ui/react';
 import React from 'react'
 
 export default function NFTCard({item}) {
@@ -5,14 +6,20 @@ export default function NFTCard({item}) {
     let tempLink = item.ipfs_art_hash ? `https://cloudflare-ipfs.com/ipfs/${item.ipfs_art_hash}` : `${item.ipfs_art_url}`;
 
   return (
-    <div style={{margin: 10, textAlign: "center"}}>
-        <div>
-            <img style={{height: 200, width: 200, objectFit: "cover", borderRadius: 20}} src={tempLink} alt="NFT Image"/>
-        </div>
-        <div>
-            <p style={{marginBottom: 8, fontWeight: "bold"}}>{item.nft_name}</p>
-            <p style={{marginBottom: 30, marginTop: 0, fontWeight: "bold"}}>{item.nerg_sale_value / 1000000000} ERG</p>
-        </div>
-    </div>
+    <Stack boxShadow="lg" borderRadius={"lg"} borderWidth={1} overflow="hidden" spacing={0} justifyContent="space-between">
+        <Box>
+          <AspectRatio ratio={1}>
+            <Image objectFit="cover"  src={tempLink} alt="NFT Image"/>
+          </AspectRatio>
+        </Box>
+        <Box px="4">
+            <Text noOfLines={2} fontWeight="semibold" my="4" fontSize="lg">{item.nft_name}</Text>
+        </Box>
+
+            {/* nerg_sale_value is in nanoERG, so we must divide it */}
+            <Box px="4">
+              <Button as="a" href={`https://skyharbor.io/token/${item.token_id}`} target="_blank" rel="noreferrer"  mb="4" width={"100%"} colorScheme={"blue"}>{item.nerg_sale_value / 1000000000} ERG</Button>
+            </Box>
+    </Stack>
   )
 }
