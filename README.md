@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## SkyHarbor Swagger API Docs
+[https://app.swaggerhub.com/apis-docs/SKYHARBORNFT_1/marketplace-api/1.0.0](https://app.swaggerhub.com/apis-docs/SKYHARBORNFT_1/marketplace-api/1.0.0)
+
+Server base route:
+https://skyharbor-server.net
+
 ## Getting Started
 
 First, run 
