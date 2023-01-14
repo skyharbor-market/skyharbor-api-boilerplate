@@ -7,6 +7,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Server base route:
 https://skyharbor-server.net
 
+## Deploy
+Deploy for free with Vercel by clicking [here](https://vercel.com/new/git/external?repository-url=https://github.com/skyharbor-market/skyharbor-api-boilerplate&amp;project-name=skyharbor-api-boilerplate&amp;repository-name=skyharbor-api-boilerplate).
+
 ## Getting Started
 
 First, run 
