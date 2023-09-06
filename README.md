@@ -1,8 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## SkyHarbor Swagger API Docs
+[https://app.swaggerhub.com/apis-docs/SKYHARBORNFT_1/marketplace-api/1.0.0](https://app.swaggerhub.com/apis-docs/SKYHARBORNFT_1/marketplace-api/1.0.0)
+
+Server base route:
+https://skyharbor-server.net
+
+## Deploy
+Deploy for free with Vercel by clicking [here](https://vercel.com/new/git/external?repository-url=https://github.com/skyharbor-market/skyharbor-api-boilerplate&amp;project-name=skyharbor-api-boilerplate&amp;repository-name=skyharbor-api-boilerplate).
+
 ## Getting Started
 
-First, run the development server:
+First, run 
+```bash
+npm install
+# or
+yarn install
+```
+Then, run the development server:
 
 ```bash
 npm run dev
